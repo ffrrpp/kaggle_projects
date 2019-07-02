@@ -1,11 +1,11 @@
-The objective of this task is to predict keypoint positions on face images. This can be used as a building block in several applications, such as:
+### Objective
 
-tracking faces in images and video
+The objective of this task is to predict keypoint positions on face images. 
 
-analysing facial expressions
+A detailed description of the project can be found here:
+https://www.kaggle.com/c/facial-keypoints-detection/overview/description
 
-detecting dysmorphic facial signs for medical diagnosis
 
-biometrics / face recognition
+### What I did
 
-Detecing facial keypoints is a very challenging problem.  Facial features vary greatly from one individual to another, and even for a single individual, there is a large amount of variation due to 3D pose, size, position, viewing angle, and illumination conditions. Computer vision research has come a long way in addressing these difficulties, but there remain many opportunities for improvement.
+A large fraction of the training data have missing values. I trained a linear model to fit the missing features using existing features and then trained a regression CNN model to calculate the coordinates of the keypoints.
